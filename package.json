@@ -12,8 +12,8 @@
     "@react-google-maps/api": "^2.20.3",
     "classnames": "^2.5.1",
     "next": "15.0.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
