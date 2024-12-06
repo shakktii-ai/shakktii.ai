@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
+import Script from "next/script";
+import { useEffect } from "react";
+import styles from "@/styles/Cart.module.css";
 
+// Load local fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -15,6 +17,34 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  useEffect(() => {
+    const boxes = document.querySelectorAll(`.${styles.box}`);
+
+    const checkBoxes = () => {
+      const triggerBottom = window.innerHeight * 0.8; // Trigger point
+
+      boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          box.classList.add(styles.show);
+        } else {
+          box.classList.remove(styles.show);
+        }
+      });
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", checkBoxes);
+
+    // Call on mount to handle boxes already in view
+    checkBoxes();
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener("scroll", checkBoxes);
+    };
+  }, []);
   return (
     <>
       <Head>
@@ -23,96 +53,97 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
-        <main className={styles.main}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
-          <ol>
-            <li>
-              Get started by editing <code>pages/index.js</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
 
-          <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Deploy now
-            </a>
-            <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.secondary}
-            >
-              Read our docs
-            </a>
+      <img id="Home" className="background-video desktop "src="/ai1.jpg"   />
+      <img id="HomeMobile" class="background-video mobile" src="/ai2.jpg" />
+        {/* <source src="/1019.mp4" type="video/mp4" /> */}
+      {/* </video> */}
+   
+
+
+
+      <div className="m-auto flex justify-center mb-28">
+        <div className="content"><div className="main">
+          <img src="/Logo.gif" alt="Logo" className="h-60 m-auto w-auto sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10  logo" /></div>
+          <h1 className="text-center mt-5 font-bold text-4xl h1">Shakktii AI</h1>
+          <div className="container mb-10">
+            <span className="text-xl font-semibold text-center animated-text"></span>
           </div>
-        </main>
-        <footer className={styles.footer}>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Learn
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/window.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Examples
-          </a>
-          <a
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Go to nextjs.org →
-          </a>
-        </footer>
+        </div>
       </div>
+      <section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+    <div class=" box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16 ">
+
+        {/* <!-- Image --> */}
+        <div class={`${styles.box} box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10`}>
+            <img src="https://cdn.devdojo.com/images/december2020/productivity.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 " />
+        </div>
+
+        {/* <!-- Content --> */}
+        <div class={`${styles.box} box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none `}>
+            <h2 class={`${styles.box}m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl`}>
+                Boost Productivity
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+                Build an atmosphere that creates productivity in your organization and your company culture.
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Maximize productivity and growth
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Speed past your competition
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Learn the top techniques
+                </li>
+            </ul>
+        </div>
+        {/* <!-- End  Content --> */}
+    </div>
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+
+        {/* <!-- Content --> */}
+        <div class={`${styles.box} box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32`}>
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                Automated Tasks
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+                Save time and money with our revolutionary services. We are the leaders in the industry.
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Automated task management workflow
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Detailed analytics for your data
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"><span class="text-sm font-bold">✓</span></span> Some awesome integrations
+                </li>
+            </ul>
+        </div>
+        {/* <!-- End  Content --> */}
+
+        {/* <!-- Image --> */}
+        <div class={`${styles.box} box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2`}>
+            <img src="https://cdn.devdojo.com/images/december2020/settings.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32" />
+        </div>
+    </div>
+</section>
+      <Script
+        src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          new Typed('.animated-text', {
+            strings: ['EXPLORE UNLIMITED STRENGTH', 'WITH ARTIFICIAL INTELLIGENCE'],
+            typeSpeed: 50,
+            backSpeed: 60,
+            backDelay: 1000,
+            loop: true,
+          });
+        }}
+      />
     </>
   );
 }
