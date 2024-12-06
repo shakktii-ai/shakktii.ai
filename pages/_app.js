@@ -21,6 +21,7 @@ import CART from '@/components/cart'
 import LogoCarousel from "@/components/LogoCarousel";
 import Footer from "@/components/footer";
 import { useRouter } from "next/router";
+import MAPSimport from "@/components/maps";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -41,6 +42,7 @@ export default function App({ Component, pageProps }) {
             <div className="m-5 h-20"></div>
              <LogoCarousel />
              <div className="m-52 h-10"></div>
+             <MAPSimport />
           </>
         )}
       
