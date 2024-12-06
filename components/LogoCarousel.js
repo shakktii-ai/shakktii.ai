@@ -253,3 +253,125 @@ const LogoCarousel = () => {
 };
 
 export default LogoCarousel;
+
+
+// import React, { useState, useEffect } from 'react';
+
+// const slides = [
+//   // Slide data...
+//   {
+//         id: 1,
+//         title: "2012",
+//         imgSrc: "/modi.gif",
+//         alt: "Inspired by Shree Narendra Modi, Puushkar an ISB Alum became the Founding Member of Citizens for Accountable Governance, the official team of Shree Narendra Modi’s Prime Ministerial campaign",
+//       },
+//       {
+//         id: 2,
+//         title: "2012 - 2014",
+//         imgSrc: "/india.gif",
+//         alt: "Ideated and executed multiple projects like the collection of iron from 6lac villages, Chai pe Charcha, Modi in 3D, NaMo for India, Onground research, and campaign. Ideated the NaMo App with providing consultancy",
+//       },
+//       {
+//         id: 3,
+//         title: "2014 - 2019",
+//         imgSrc: "/maharastra.gif",
+//         alt: "Chief consultant to the CM War Room and ideated and provided blue print for a unique first time ground influencer outreach project, Mukhyamantri Mitra",
+//       },
+//       {
+//         id: 4,
+//         title: "2019 - 2021",
+//         imgSrc: "/rajmudra.gif",
+//         alt: "Consulting to various national and international government bodies, political leaders and tech platforms for ground outreach",
+//       },
+//       {
+//         id: 5,
+//         title: "2021 - Present",
+//         imgSrc: "/AI.gif",
+//         alt: "Founded a tech platform for assistive governance and outreach to citizens.Like Gramya, SHAKKTII, Grath. Worked with Chattisgarh, Madhya Padresh The principal coordinator for P20. With the use of AI and Gramya conducted 1000 roundatbles at Gram Panchayat",
+//       },
+// ];
+
+// const Slide = ({ slide, isActive }) => (
+//   <div className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${isActive ? 'opacity-100' : 'opacity-0'}`}>
+//     <a href="#" className="flex flex-col items-center bg-white border border-gray-200 md:flex-row hover:bg-gray-100 lg:h-full">
+//       <img className="object-cover ml-2 m-auto lg:ml-30 mb-20 shadow-bottom md:h-auto md:max-w-3xl rounded-b-full" src={slide.imgSrc} alt={slide.alt} />
+//       <div className="flex flex-col lg:ml-36 justify-between m-auto leading-normal mr-2">
+//         <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">{slide.title}</h5>
+//         <p className="mb-3 font-normal text-2xl text-center text-gray-700 dark:text-gray-400">{slide.alt}</p>
+//       </div>
+//     </a>
+//   </div>
+// );
+
+// const LogoCarousel = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const [isPaused, setIsPaused] = useState(false);
+
+//   const handleNext = () => {
+//     if (!isPaused) {
+//       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+//     }
+//   };
+
+//   const handlePrev = () => {
+//     if (!isPaused) {
+//       setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+//     }
+//   };
+
+//   useEffect(() => {
+//     const interval = setInterval(handleNext, 5000);
+//     return () => clearInterval(interval);
+//   }, [isPaused]); // Dependency on isPaused
+
+//   const handleMouseDown = () => setIsPaused(true);
+//   const handleMouseUp = () => setIsPaused(false);
+//   const handleTouchStart = () => setIsPaused(true);
+//   const handleTouchEnd = () => setIsPaused(false);
+
+//   return (
+//     <div className="relative max-w-full mx-auto mt-5">
+//       <div className="slider relative">
+//         <h2 id='Experience' className='z-10 slider text-4xl font-bold text-center bg-white p-2'>Our Past Experience</h2>
+
+//         <div 
+//           className="lg:overflow-hidden relative h-96 sm:h-64 md:h-80 lg:h-96"
+//           onMouseDown={handleMouseDown}
+//           onMouseUp={handleMouseUp}
+//           onTouchStart={handleTouchStart}
+//           onTouchEnd={handleTouchEnd}
+//         >
+//           {slides.map((slide, index) => (
+//             <Slide key={slide.id} slide={slide} isActive={currentIndex === index} />
+//           ))}
+//         </div>
+
+//         {/* Previous Button */}
+//         <button
+//           type="button"
+//           className="absolute top-1/2 left-4 z-30 flex justify-center items-center h-10 w-10 rounded-full bg-white/30 group hover:bg-white/50"
+//           onClick={handlePrev}
+//           aria-label="Previous"
+//         >
+//           <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
+//           </svg>
+//         </button>
+
+//         {/* Next Button */}
+//         <button
+//           type="button"
+//           className="absolute top-1/2 right-4 z-30 flex justify-center items-center h-10 w-10 rounded-full bg-white/30 group hover:bg-white/50"
+//           onClick={handleNext}
+//           aria-label="Next"
+//         >
+//           <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+//           </svg>
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default LogoCarousel;

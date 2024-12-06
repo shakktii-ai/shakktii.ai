@@ -18,6 +18,7 @@ import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import CART from '@/components/cart'
+import LogoCarousel from "@/components/LogoCarousel";
 import Footer from "@/components/footer";
 import { useRouter } from "next/router";
 
@@ -33,12 +34,13 @@ export default function App({ Component, pageProps }) {
         <Slider /> */}
       {router.pathname === "/" && (
           <>
-            {/* <LogoCarousel /> */}
+           
           <CART />
             
             {/* <Services /> */}
-            
-            
+            <div className="m-5 h-20"></div>
+             <LogoCarousel />
+             <div className="m-52 h-10"></div>
           </>
         )}
       
