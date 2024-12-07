@@ -152,7 +152,7 @@ payments.
       </div>
       <div className={`${styles.box} h-72 md:h-96 w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0`}>
         <a  className="h-72 md:h-96 block group relative mx-2 overflow-hidden shadow-lg">
-          <img src="https://assets.thehansindia.com/hansindia-bucket/9060_corporate-life.jpg" class="absolute z-0 object-fit w-full h-72 md:h-96" />
+          <img src="/Corporate.jpg" class="absolute z-0 object-fit w-full h-72 md:h-96" />
           <div className="absolute gradient transition duration-300 group-hover:bg-black group-hover:opacity-90 w-full h-72 md:h-96 z-10"></div>
           <div className="absolute left-0 right-0 bottom-0 p-6 z-30 transform translate-y-1/2 transition duration-300 h-full group-hover:translate-y-0 delay-100">
             <div className="h-1/2 relative">
