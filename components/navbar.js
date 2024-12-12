@@ -390,6 +390,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
+import styles from '@/styles/Home.module.css'
+import Image from "next/image";
 
 const NavLink = ({ href, label, isMobile, onClick }) => (
   <Link href={href}>
@@ -418,7 +420,7 @@ const Navbar = () => {
   const toggleItem2Menu = () => setIsItem2Open(!isItem2Open);
   const toggleItem3Menu = () => setIsItem3Open(!isItem3Open);
 
-  return (
+  return (<>
     <nav className="bg-transparent shadow-lg z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -576,6 +578,21 @@ const Navbar = () => {
         <NavLink href="/history" label="HISTORY" isMobile />
       </div>
     </nav>
+     < a href="https://wa.me/+918956668867?text=I%20am%20interested%20in%20your%20services." >
+     <div className={styles.phone}>
+       <Image src="/logo.png" width={50} height={50} alt="Call Now" title="Call Now" />
+       {/* <Image src="/logo.png" width={50} height={50} alt="Call Now" title="Call Now" /> */}
+     </div>
+     </a >
+    
+    
+     < a href="tel:+91-89566-68867" >
+     <div className={styles.callphone}>
+       <Image src="/calllogo.png" width={50} height={50} alt="Call Now" title="Call Now" />
+       {/* <Image src="/logo.png" width={50} height={50} alt="Call Now" title="Call Now" /> */}
+     </div>
+     </a >
+     </>
   );
 };
 
