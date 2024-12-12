@@ -13,7 +13,7 @@
 //   </>
 // }
 
-
+import ContactForm from "@/components/contact";
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
@@ -43,11 +43,11 @@ export default function App({ Component, pageProps }) {
              <LogoCarousel />
              <div className="m-52 h-10"></div>
              <MAPSimport />
+             <ContactForm />
           </>
         )}
       
       </main>
-      
       <Footer />
     </div>
   );

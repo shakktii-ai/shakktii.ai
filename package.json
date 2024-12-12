@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@react-google-maps/api": "^2.20.3",
     "classnames": "^2.5.1",
     "next": "15.0.4",
