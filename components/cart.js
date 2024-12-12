@@ -51,7 +51,7 @@ function cart() {
 
   return (
     <>
-    <div className="bg-gray-800 min-h-screen">
+    <div className="bg-gray-800 min-h-screen -mt-4">
         <h2 className='font-bold text-white p-10 pb-0 text-3xl   text-center'>DIGITAL MARKETING</h2>
   <div class="max-w-screen-xl mx-auto  pt-16 pb-4">
     <div class="flex flex-col justify-center m-auto flex-wrap md:flex-row md:-mx-2">

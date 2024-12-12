@@ -8,7 +8,8 @@ export default function ContactForm() {
     return <p className="text-green-500 text-center font-semibold">Thanks for joining!</p>;
   }
 
-  return (
+  return (<>
+  <h1 className='text-center text-3xl font-bold m-5'>Contact Us</h1>
     <form 
       onSubmit={handleSubmit}
       className="max-w-lg mt-10 mx-auto p-6 bg-white shadow-lg rounded-lg"
@@ -61,7 +62,7 @@ export default function ContactForm() {
           Submit
         </button>
       </div>
-    </form>
+    </form></>
   );
 }
 
