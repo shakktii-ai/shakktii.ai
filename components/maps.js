@@ -10,7 +10,7 @@ const MAPS = () => {
   useEffect(() => {
     const getLocations = async () => {
       const fakeLocation = [
-        { title: 'Mahad', lat:  18.08209397458222, lng: 73.42234238155838, description: `<h1 class='font-bold'> Ground Intelligence</h1>
+        { title: 'Mahad ', lat:  18.08209397458222, lng: 73.42234238155838, description: `<h1 class='font-bold'> Ground Intelligence</h1>
  Stay ahead with actionable insights that drive success.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
  Seamless strategies for every platform, handled with precision.
@@ -27,7 +27,7 @@ multimedia tools.
 <h1 class='font-bold'> Auto Posting & Auto Commenting</h1>
  Save time and maintain consistency with intelligent automation.
 ` },
-        { title: 'Phaltan', lat: 17.993249003656196, lng: 74.42942449739226, description: `<h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Phaltan ', lat: 17.993249003656196, lng: 74.42942449739226, description: `<h1 class='font-bold'>Ground Intelligence</h1>
  Stay ahead with actionable insights that drive success.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
  Seamless strategies for every platform, handled with precision.
@@ -43,7 +43,7 @@ efficient execution.
 multimedia tools.
  <h1 class='font-bold'>Auto Posting & Auto Commenting</h1>
  Save time and maintain consistency with intelligent automation.` },
-        { title: 'Jamner', lat: 20.809693513918464, lng:  75.77802942639441, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Jamner ', lat: 20.809693513918464, lng:  75.77802942639441, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
  Empower your strategy with real-time data and insights.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
  From planning to execution, we’ve got every aspect covered.
@@ -60,7 +60,7 @@ solutions.
  Stay ahead of the curve with the power of cutting-edge artificial 
 intelligence` },
 
-        { title: 'Pachora', lat:  20.65919095233716, lng: 75.3478719850142, description: `<h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Pachora ', lat:  20.65919095233716, lng: 75.3478719850142, description: `<h1 class='font-bold'>Ground Intelligence</h1>
  Leverage data-driven insights to craft smarter strategies.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
  From strategy to execution, we handle it all seamlessly.
@@ -77,7 +77,7 @@ connections.
  Maximize engagement with intelligent automation, ensuring 
 consistency and efficiency` },
 
-        { title: 'Nagar ', lat:  19.09051436028614, lng: 74.74678713274912, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Nagar', lat:  19.09051436028614, lng: 74.74678713274912, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
  Harness powerful insights to fuel your strategy and drive growth.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
  Complete control over every aspect of your social media presence, 
@@ -106,7 +106,7 @@ visibility.
  Fresh, engaging, and visually stunning content delivered every day to 
 captivate your audience.
 ` },
-        { title: 'Chinchwad ', lat: 18.639050644225645, lng: 73.79385485804474, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Chinchwad', lat: 18.639050644225645, lng: 73.79385485804474, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
  Unlock valuable insights to strategically guide your digital presence and 
 decisions.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
@@ -132,7 +132,7 @@ ensuring consistent activity and engagement.
 audience in an authentic way, driving strategic results.
 ` },
 
-        { title: 'Bramhapuri ', lat: 20.611129583843827, lng: 79.85732078839634, description: `<h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Bramhapuri', lat: 20.611129583843827, lng: 79.85732078839634, description: `<h1 class='font-bold'>Ground Intelligence</h1>
  Leverage data-driven insights to inform your strategy and stay ahead of 
 trends.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
@@ -151,7 +151,7 @@ high engagement across platforms.
  Fresh, engaging, and visually compelling content delivered daily to 
 captivate your audience and maintain relevance.` },
 
-        { title: 'Mahim ', lat: 19.04080586011608, lng: 72.8442694173768, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
+        { title: 'Mahim', lat: 19.04080586011608, lng: 72.8442694173768, description: ` <h1 class='font-bold'>Ground Intelligence</h1>
  Comprehensive research and insights to drive strategic decision
 making.
  <h1 class='font-bold'>End-to-End Social Media Management</h1>
@@ -171,7 +171,7 @@ presence.
  <h1 class='font-bold'>Daily Creatives</h1>
  Consistent production of fresh and engaging creative content for daily 
 interaction.` },
-        { title: 'Delhi ', lat:  28.66899139266332,  lng: 77.22222835970781, description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
+        { title: 'Delhi', lat:  28.66899139266332,  lng: 77.22222835970781, description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
  AI & Machine Learning: Predict trends, personalize content, and 
 automate tasks.
  Automation Tools: Automate emails, social media, and customer 
@@ -194,7 +194,7 @@ gaps.
  Trend Identification: Spot emerging trends to stay relevant.
 ` },
 
-        { title: 'kashmir ', lat:   31.972668806835898,   lng: 76.3923224335794, description: ` <h1 class='font-bold'> Audience Sentiment Analysis:</h1> Understanding how the audience 
+        { title: 'kashmir', lat:   31.972668806835898,   lng: 76.3923224335794, description: ` <h1 class='font-bold'> Audience Sentiment Analysis:</h1> Understanding how the audience 
 feels about certain topics, influencers, or brands, based on their social 
 media engagement and discussions. This would focus on key metrics 
 like positive, negative, and neutral sentiments.
@@ -219,7 +219,7 @@ which can help in planning future outreach strategies.
 
 ` },
 
-        { title: 'Ladakh ', lat:   34.611628412934934,   lng: 77.28495286970566, description: ` <h1 class='font-bold'> Audience Sentiment Analysis:</h1> Understanding how the audience 
+        { title: 'Ladakh', lat:   34.611628412934934,   lng: 77.28495286970566, description: ` <h1 class='font-bold'> Audience Sentiment Analysis:</h1> Understanding how the audience 
 feels about certain topics, influencers, or brands, based on their social 
 media engagement and discussions. This would focus on key metrics 
 like positive, negative, and neutral sentiments.
@@ -244,7 +244,7 @@ which can help in planning future outreach strategies.
 
 ` },
 
-        { title: ' Uttar Pradesh ', lat:   30.049248072255754,  lng: 79.07463502156651 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
+        { title: ' Uttar Pradesh', lat:   30.049248072255754,  lng: 79.07463502156651 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
  AI & Machine Learning: Predict trends, personalize content, and 
 automate tasks.
  Automation Tools: Automate emails, social media, and customer 
@@ -267,7 +267,7 @@ gaps.
  Trend Identification: Spot emerging trends to stay relevant.
 ` },
 
-        { title: 'Chhattisgarh ', lat:    22.292669548848977,   lng: 82.20233769217906 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
+        { title: 'Chhattisgarh', lat:    22.292669548848977,   lng: 82.20233769217906 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
  AI & Machine Learning: Predict trends, personalize content, and 
 automate tasks.
  Automation Tools: Automate emails, social media, and customer 
@@ -289,7 +289,7 @@ brand.
 gaps.
  Trend Identification: Spot emerging trends to stay relevant.
 ` },
-        { title: 'Gujarat ', lat:     23.194525849637373,    lng: 70.85884076514203 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
+        { title: 'Gujarat', lat:     23.194525849637373,    lng: 70.85884076514203 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
  AI & Machine Learning: Predict trends, personalize content, and 
 automate tasks.
  Automation Tools: Automate emails, social media, and customer 
@@ -311,7 +311,7 @@ brand.
 gaps.
  Trend Identification: Spot emerging trends to stay relevant.
 ` },
-        { title: 'Madhya Pradesh ', lat:    23.456496656403882,    lng: 76.76659827161913 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
+        { title: 'Madhya Pradesh', lat:    23.456496656403882,    lng: 76.76659827161913 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
  AI & Machine Learning: Predict trends, personalize content, and 
 automate tasks.
  Automation Tools: Automate emails, social media, and customer 
@@ -333,7 +333,7 @@ brand.
 gaps.
  Trend Identification: Spot emerging trends to stay relevant.
 ` },
-        { title: 'Assam ', lat:  26.55180033248778, lng:  92.58815218331866 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
+        { title: 'Assam', lat:  26.55180033248778, lng:  92.58815218331866 , description: ` <h1 class='font-bold'> Digital Marketing with Technology Interventions:</h1>
  AI & Machine Learning: Predict trends, personalize content, and 
 automate tasks.
  Automation Tools: Automate emails, social media, and customer 
