@@ -116,7 +116,7 @@ const Footer = () => {
               <li><a href="#services">Services</a></li>
             </ul>
             <ul><li id="about" className="font-bold">SHAKKTII AI</li></ul>
-            <ul><li id="about" className="-mt-5">Email: Shakktii.ai@gmail.com</li></ul>
+            <ul><li id="about" className="-mt-5">Email: info@shakktii.in</li></ul>
             <ul><li id="about" className="-mt-5">Contact Number: +91 8956668867  </li></ul>
             <p className="legal">© 2024 All rights reserved</p>
           </section>
