@@ -237,7 +237,7 @@ and other tools.
           <div className="absolute left-0 right-0 bottom-0 p-6 z-30 transform translate-y-1/2 transition duration-300 h-full group-hover:translate-y-0 delay-100">
             <div className="h-1/2 relative">
               <div className="absolute bottom-0">
-                <h2 className="font-bold text-white leading-tight transition duration-300 text-2xl pb-6 group-hover:underline">Buisness 360</h2>
+                <h2 className="font-bold text-white leading-tight transition duration-300 text-2xl pb-6 group-hover:underline">Business 360</h2>
               </div> 
             </div>
             <div className="h-1/2">
